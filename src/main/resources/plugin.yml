@@ -1,0 +1,4 @@
+name: SMPPL2Core
+version: '${project.version}'
+main: me.piporgames.smppl2core.SMPPL2Core
+api-version: '1.20'
