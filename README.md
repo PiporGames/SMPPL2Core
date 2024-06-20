@@ -18,7 +18,7 @@ Plugin maestro auxiliar para el servidor de SMP PiporLandia 2.
 
 
 ### Eventos
-- [ ] worldChangeEvent -> Mensajes de cambio de mundo
+- [x] worldChangeEvent -> Mensajes de cambio de mundo
 - [ ] playerGUI -> Abre la GUI de jugador
 - [ ] algaXP -> Al romper un alga, da XP
 - [ ] limboTp -> Al pulsar el portal, hacer TP (Skript)?
