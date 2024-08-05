@@ -1,7 +1,7 @@
 package me.piporgames.smppl2core;
 
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
+import org.bukkit.Sound;import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerChangedWorldEvent;
@@ -9,18 +9,25 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 import java.util.Objects;
 
-public class MyListener implements Listener {
+public class GeneralListener implements Listener {
+
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
-        final Player player = event.getPlayer();
-        player.sendMessage("hello :)");
-        event.setJoinMessage(null);
+        Player player = event.getPlayer();
+        player.sendMessage("§8-------------§7[§d§lS.M.P§e§l PiporLandia §a§lFOREVER§7]§8-------------§r\n\n" +
+                            "   §rBienvenido de vuelta §a" + player.getName() + "§f.\n" +
+                            "   §7Hay §6§l" + ((long) player.getServer().getOnlinePlayers().size() - 1) + "§6 jugadores en linea §7ahora mismo.§r\n\n" +
+                            "§8-----------------§7[§9piporlandia2.ddns.net§7]§8-----------------§r\n");
+        player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_TELEPORT, 10, 1.0f);
+        //event.setJoinMessage(null);
     }
 
 
+
+    // Evento - Mensajes de sistema de cambio de mundo
     @EventHandler
-    public void onWorldChange(PlayerChangedWorldEvent event) {
+    public void mensajeCambioMundo(PlayerChangedWorldEvent event) {
         //Por cada jugador en línea, mandar un mensaje si tienen el permiso específico
         for (Player player : Bukkit.getServer().getOnlinePlayers()) {
             if (player.hasPermission(ServerPermissions.listen.world.toString())) {

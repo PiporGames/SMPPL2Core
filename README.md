@@ -20,13 +20,13 @@ Plugin maestro auxiliar para el servidor de SMP PiporLandia 2.
 ### Eventos
 - [x] worldChangeEvent -> Mensajes de cambio de mundo
 - [ ] playerGUI -> Abre la GUI de jugador
-- [ ] algaXP -> Al romper un alga, da XP
-- [ ] limboTp -> Al pulsar el portal, hacer TP (Skript)?
+- [x] algaXP -> Al romper un alga, da XP
+- [x] limboTp -> Al pulsar el portal, hacer TP (Skript)?
 - [ ] titleSoundJoin -> Animación de inicio al unirte al servidor
 - [ ] deathSound -> Sonido de muerte
 - [ ] raidActivar -> Activar arreglo para las granjas de raid
 - [ ] raidDetener -> Desactivar arreglo para las granjas de raid
-- [ ] showServerSummaryOnJoin -> Muestra un mensaje de bienvenida personalizado
+- [x] showServerSummaryOnJoin -> Muestra un mensaje de bienvenida personalizado
 
 
 ### Comandos

@@ -1,5 +1,14 @@
 name: SMPPL2Core
 version: '${project.version}'
 main: me.piporgames.smppl2core.SMPPL2Core
-api-version: '1.20'
+api-version: '1.21'
 author: PiporGames
+
+commands:
+  smppl2core:
+    description: Permite modificar los ajustes del plugin de SMP PiporLandia 2.
+    aliases:
+      - core
+      - pl2
+    prefix:
+      §bSPMPL2
